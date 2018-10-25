@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#56A3D7"
+
+        />
+    <WebView
+
+        android:id="@+id/wb_searchVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       >
+
+    </WebView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#56a3d7"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+
+            >
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_search_video"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/search_video"
+                android:textColor="@color/shadowWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_search_my_key"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="选择钥匙"
+                android:textColor="#FF999999"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_search_my_key"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginLeft="70dp"
+                android:text="请选择"
+                android:textColor="@color/testSelectMsgColor"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_select_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="选择初始日期"
+                android:textColor="#FF999999"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_select_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginLeft="70dp"
+                android:text="请选择"
+                android:textColor="@color/testSelectMsgColor"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_select_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="选终止始日期"
+                android:textColor="#FF999999"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_select_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginLeft="70dp"
+                android:text="请选择"
+                android:textColor="@color/testSelectMsgColor"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    <Button
+        android:id="@+id/btn_search_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_auto_button"/>
+    </LinearLayout>
+
+</LinearLayout>
